@@ -1,3 +1,4 @@
+import { version } from '../package.json';
 import { useEffect, useRef, useState } from 'react';
 import QRCode from 'qrcode';
 import QuestionView from './question-view';
@@ -37,6 +38,7 @@ export default function LearningApp() {
   const [trainerIndex, setTrainerIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
   const [projecting, setProjecting] = useState(false);
+  const participantQrDialog = useRef<HTMLDialogElement>(null);
   const [qr, setQr] = useState({ participant: '', trainer: '' });
   const [participantUrl, setParticipantUrl] = useState('');
   const totals = score(questions, progress.answers);
@@ -55,7 +57,7 @@ export default function LearningApp() {
     const learner = new URL(link); learner.searchParams.set('deelnemer', '1');
     const trainer = new URL(link); trainer.searchParams.set('trainer', '1');
     setParticipantUrl(learner.href);
-    const opts = { width: 640, margin: 4, errorCorrectionLevel: 'M' as const, color: { dark: '#00285b', light: '#ffffff' } };
+    const opts = { width: 1600, margin: 4, errorCorrectionLevel: 'M' as const, color: { dark: '#00285b', light: '#ffffff' } };
     Promise.all([QRCode.toDataURL(learner.href, opts), QRCode.toDataURL(trainer.href, opts)]).then(([participant, trainer]) => { if (!cancelled) setQr({ participant, trainer }); }).catch(() => { if (!cancelled) setNotice('Gebruik de deelnamelink als de QR-code niet verschijnt.'); });
     const onBack = () => { if (live.client.current?.active) { const url = new URL(window.location.href); url.search = '?trainer=1'; url.hash = ''; window.history.replaceState({}, '', url); setMode('trainer'); setNotice('Sluit eerst de groepssessie af en wis de gegevens.'); return; } setMode(initialMode()); setRevealed(false); setProjecting(false); setNotice(''); };
     window.addEventListener('popstate', onBack);
@@ -92,10 +94,11 @@ export default function LearningApp() {
     try { await navigator.clipboard.writeText(participantUrl); setNotice('De deelnamelink is gekopieerd.'); }
     catch { setNotice(`Deelnamelink: ${participantUrl}`); }
   }
-  const share = <section className="start-share static-share"><div>{qr.participant && <img src={qr.participant} alt="QR-code voor zelfstandig oefenen" />}</div><div><p className="eyebrow">OEFENEN OP DE EIGEN TELEFOON</p><h2>Scan en oefen de twaalf vragen.</h2><p>Iedereen oefent zelfstandig. De trainer bespreekt de vragen op het gezamenlijke scherm. Resultaten worden niet tussen apparaten gedeeld.</p><div className="inline-actions"><button className="text-btn" onClick={copyLink}><Copy size={17} /> Deelnamelink kopiëren</button>{qr.participant && <a className="text-btn" href={qr.participant} download="VCH-Bulk-deelnemers-QR.png"><Download size={17} /> Deelnemers-QR</a>}{qr.trainer && <a className="text-btn" href={qr.trainer} download="VCH-Bulk-trainer-QR.png"><Download size={17} /> Trainer-QR</a>}</div></div></section>;
+  const share = <section className="start-share static-share"><div>{qr.participant && <button className="static-qr-preview" aria-label="Vergroot de deelnemers-QR voor zelfstandig oefenen" onClick={() => participantQrDialog.current?.showModal()}><img src={qr.participant} alt="QR-code voor zelfstandig oefenen" /></button>}</div><div><p className="eyebrow">OEFENEN OP DE EIGEN TELEFOON</p><h2>Scan en oefen de twaalf vragen.</h2><p>Iedereen oefent zelfstandig. De trainer bespreekt de vragen op het gezamenlijke scherm. Resultaten worden niet tussen apparaten gedeeld.</p><div className="inline-actions"><button className="btn secondary qr-enlarge-button" disabled={!qr.participant} onClick={() => participantQrDialog.current?.showModal()}><ZoomIn size={18} /> QR-code vergroten</button><button className="text-btn" onClick={copyLink}><Copy size={17} /> Deelnamelink kopiëren</button>{qr.participant && <a className="text-btn" href={qr.participant} download="VCH-Bulk-deelnemers-QR.png"><Download size={17} /> Deelnemers-QR</a>}{qr.trainer && <a className="text-btn" href={qr.trainer} download="VCH-Bulk-trainer-QR.png"><Download size={17} /> Trainer-QR</a>}</div></div></section>;
   const trainerControls = <div className="review-controls"><button className="btn secondary" disabled={trainerIndex === 0} onClick={() => trainerGo(trainerIndex - 1)}><ChevronLeft size={18} /> Vorige</button><span>{trainerIndex + 1} van {order.length}</span><button className="btn primary" aria-pressed={revealed} onClick={() => { const next = !revealed; setRevealed(next); if (live.snapshot.phase === 'review') live.client.current?.review(trainerQuestion.n, next); }}>{revealed ? <EyeOff size={18} /> : <Eye size={18} />}{revealed ? 'Verberg goede antwoorden' : 'Toon goede antwoorden'}</button><button className="btn secondary" disabled={trainerIndex === order.length - 1} onClick={() => trainerGo(trainerIndex + 1)}>Volgende <ChevronRight size={18} /></button></div>;
 
   return <div className={`app-shell ${projecting ? 'static-projecting' : ''}`}>
+    <small className="app-version" aria-label={`Versie ${version}`}>v{version}</small>
     {!projecting && <header className="site-header"><div className="header-inner"><div className="brand"><img src="./images/vch-logo.png" alt="VCH — Stichting Veilige Haven" /><span>VEILIG WERKEN<br /><b>OP DE BULKTERMINAL</b></span></div><div className="header-right"><span className="header-label">SAMEN OEFENEN</span>{mode !== 'home' && <button className="text-btn" disabled={pending} onClick={() => go('home')}>Startpagina</button>}</div></div></header>}
     <main>
       {notice && <div className="message notice" role="status">{notice}<button aria-label="Melding sluiten" onClick={() => setNotice('')}><X size={18} /></button></div>}
@@ -136,6 +139,7 @@ export default function LearningApp() {
         {!projecting && <p className="static-privacy"><QrCode size={17} /> {live.snapshot.active ? 'Groepsgegevens blijven tijdelijk in dit trainersscherm. Sluit na afloop de sessie af en wis de gegevens.' : 'Start een groepssessie voor live antwoorden. Zonder groepssessie kunt u de vragen klassikaal bespreken.'}</p>}
       </div>}
     </main>
+    <dialog ref={participantQrDialog} className="live-close-dialog live-qr-dialog" aria-labelledby="participant-qr-title"><p className="eyebrow">ZELFSTANDIG OEFENEN</p><h2 id="participant-qr-title">Scan de QR-code met je telefoon.</h2>{qr.participant && <img src={qr.participant} alt="Grote deelnemers-QR voor zelfstandig oefenen" />}<button className="btn secondary" onClick={() => participantQrDialog.current?.close()}>QR-code sluiten</button></dialog>
     {!projecting && <footer className="site-footer"><span>VCH · Stichting Veilige Haven</span><span>Bulk · formatieve oefenvragen</span></footer>}
   </div>;
 }
