@@ -1,0 +1,30 @@
+{
+  "name": "svh-sector-bulk",
+  "version": "4.0.0",
+  "private": true,
+  "type": "module",
+  "description": "VCH Bulk-oefenapp met tijdelijke WebRTC-groepssessies, zonder database of eigen serverfuncties",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "tsc --noEmit",
+    "test": "node tests/quiz-core.mjs && node --test tests/live-session.mjs && node tests/static-contract.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "1.31.0",
+    "peerjs": "1.5.5",
+    "qrcode": "1.5.4",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "esbuild": "0.28.0",
+    "typescript": "5.9.3"
+  }
+}
+

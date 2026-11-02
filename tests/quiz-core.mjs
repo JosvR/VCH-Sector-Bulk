@@ -1,0 +1,28 @@
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { answerMask, isCorrect, score, restore, MAX_AGE } from '../src/quiz-core.mjs';
+const questions = JSON.parse(await readFile(new URL('../src/questions.json', import.meta.url), 'utf8'));
+assert.deepEqual(questions.map(q => q.n), Array.from({ length: 12 }, (_, i) => i + 1));
+const expected = [2, 8, 1, 4, 8, 2, 1, 4, 2, 1, 8, 4];
+questions.forEach((q, i) => assert.equal(answerMask(q.key), expected[i]));
+assert.equal(isCorrect({key: "A,B,D,E"}, 27), true);
+for (const partialOrExtra of [1, 3, 11, 31, 63]) assert.equal(isCorrect({key: "A,B,D,E"}, partialOrExtra), false);
+assert.equal(isCorrect({key: "A,D"}, 9), true);
+for (const partialOrExtra of [1, 8, 11, 15]) assert.equal(isCorrect({key: "A,D"}, partialOrExtra), false);
+assert.equal(isCorrect(questions[0], undefined), false);
+const answers = Object.fromEntries(questions.map((q, i) => [q.n, expected[i]]));
+assert.deepEqual(score(questions, answers), { answered: 12, correct: 12, total: 12 });
+assert.deepEqual(score(questions, {}), { answered: 0, correct: 0, total: 12 });
+assert.equal(score(questions, { ...answers, 5: 1, 12: 1 }).correct, 10);
+const now = 2000000000000;
+const record = { startedAt: now - 1000, answers, current: 8, finished: true };
+assert.deepEqual(restore(JSON.stringify(record), questions, now), record);
+assert.equal(restore(JSON.stringify({ ...record, startedAt: now - MAX_AGE - 1 }), questions, now).finished, false);
+assert.deepEqual(restore('{broken', questions, now).answers, {});
+assert.deepEqual(restore(JSON.stringify({ ...record, startedAt: now + 1 }), questions, now).answers, {});
+const invalid = restore(JSON.stringify({ ...record, answers: { 1: 3, 2: 16, 5: 64, 12: 4, 13: 1 }, current: 999 }), questions, now);
+assert.deepEqual(invalid.answers, { 12: 4 });
+assert.equal(invalid.current, 1); assert.equal(invalid.finished, false);
+assert.equal(restore(JSON.stringify({ ...record, answers: { 1: 2 }, finished: true }), questions, now).finished, false);
+console.log('Geslaagd: 12 antwoordcombinaties, score, volledige meervoudige antwoorden en veilig herstellen/vervallen van browservoortgang.');
+

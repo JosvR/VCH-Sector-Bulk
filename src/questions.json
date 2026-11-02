@@ -1,0 +1,302 @@
+[
+  {
+    "n": 1,
+    "title": "Basis en aanvullende PBM’s",
+    "stem": "Welke uitspraak over basis-PBM en aanvullende PBM is juist?",
+    "options": [
+      "De verplichte basis-PBM beschermen tegen alle risico’s van het werk op de terminal.",
+      "Je draagt de verplichte basis-PBM en vult die aan volgens de risico’s en werkinstructie.",
+      "Bij bijzonder werk vervangen de aanvullende PBM de verplichte basis-PBM.",
+      "Naast de basis-PBM kies je extra bescherming zodra je hinder of klachten merkt."
+    ],
+    "key": "B",
+    "multi": false,
+    "explain": "B is juist: de terreinregels en de taak bepalen samen de benodigde bescherming. Neem de concrete basisset van de betreffende terminal door.",
+    "image": "./images/vraag-1-1.webp",
+    "images": [
+      "./images/vraag-1-1.webp"
+    ],
+    "slide": 1,
+    "level": "Begrijpen",
+    "trainer": "Welke extra bescherming vraagt één taak die jullie regelmatig uitvoeren? Waar vind je die afspraak?",
+    "questionExplanation": "Niveau: Begrijpen.\nLeerdoel: Uitleggen hoe terreinregels en taakrisico’s samen bepalen welke PBM nodig zijn.\nDeelnemers leggen uit hoe basisbescherming en taakgebonden bescherming samenhangen.\nDit is een formatieve lesvraag met één juist antwoord. Laat deelnemers eerst zelf kiezen en hun redenering geven. Bespreek daarna het juiste antwoord en de afleiders. Licht bij uiteenlopende antwoorden het betreffende principe opnieuw toe.",
+    "distractors": "A: verwart basisbescherming met volledige bescherming.\nC: ziet aanvullende PBM als vervanging.\nD: laat klachten bepalen wanneer bescherming begint; dat is te laat.",
+    "attention": "Bespreek de concrete basisset van de terminal en de aanvullende bescherming bij de gekozen werkzaamheden.",
+    "captions": []
+  },
+  {
+    "n": 2,
+    "title": "Stalen meerdraden",
+    "stem": "Hoe kan een stalen meerdraad bewegen als hij onder spanning breekt of losschiet?",
+    "options": [
+      "Hij valt recht naar beneden zodra de spanning wegvalt.",
+      "Hij schiet alleen terug in een rechte lijn langs zijn oorspronkelijke positie.",
+      "Hij blijft bij de bolder liggen zolang het andere uiteinde nog vastzit.",
+      "Hij kan plotseling terugveren en ook naar de zijkant uitslaan."
+    ],
+    "key": "D",
+    "multi": false,
+    "explain": "D is juist: de baan kan veranderen door de ligging en geleiding van de draad. Alleen uit het verlengde staan is daarom geen garantie dat je veilig staat. Blijf buiten de gevarenzone volgens de werkafspraken.",
+    "image": "./images/vraag-2-1.webp",
+    "images": [
+      "./images/vraag-2-1.webp"
+    ],
+    "slide": 2,
+    "level": "Begrijpen",
+    "trainer": "Welke informatie over de ligging, spanning en geleiding van de draden heb je nodig om de gevarenzone te bepalen?",
+    "questionExplanation": "Niveau: Begrijpen.\nLeerdoel: Uitleggen waarom een meerdraad onder spanning een gevarenzone heeft.\nDeelnemers verklaren het gevaar van opgeslagen energie en onverwachte beweging van een meerdraad.\nDit is een formatieve lesvraag met één juist antwoord. Laat deelnemers eerst zelf kiezen en hun redenering geven. Bespreek daarna het juiste antwoord en de afleiders. Licht bij uiteenlopende antwoorden het betreffende principe opnieuw toe.",
+    "distractors": "A: onderschat de opgeslagen energie.\nB: beperkt het gevaar tot één rechte lijn.\nC: veronderstelt dat één bevestiging onverwachte beweging voorkomt.",
+    "attention": "Benadruk dat een draad ook zijdelings kan uitslaan. De foto toont een beschadigde draad, geen voorbeeld van een goedgekeurde draad. De veilige zone is niet uit deze detailfoto af te leiden.",
+    "captions": []
+  },
+  {
+    "n": 3,
+    "title": "Een leeg ruim betreden",
+    "stem": "Je moet een leeg scheepsruim inspecteren. Je gasmeter heeft de bumptest doorstaan. De mangatwacht staat klaar en het luik is tegen dichtvallen geborgd. Het ruim is nog niet vrijgegeven. Wat doe je?",
+    "options": [
+      "Ik blijf buiten tot de metingen en vrijgave volgens de betredingsprocedure zijn geregeld.",
+      "Ik daal af met mijn gasmeter, terwijl de mangatwacht contact met mij houdt.",
+      "Ik laat het luik tien minuten openstaan en daal daarna af met mijn gasmeter.",
+      "Ik hang mijn gasmeter kort door het mangat en daal af als hij niet alarmeert."
+    ],
+    "key": "A",
+    "multi": false,
+    "explain": "A is juist. Ook zonder lading kan het ruim gevaarlijk zijn. De aanwezige maatregelen heffen de ontbrekende vrijgave niet op. Metingen, toezicht en reddingsafspraken horen bij de volledige betredingsprocedure.",
+    "image": "./images/vraag-3-1.webp",
+    "images": [
+      "./images/vraag-3-1.webp"
+    ],
+    "slide": 3,
+    "level": "Toepassen",
+    "trainer": "Wat controleert een bumptest, en wat moet de meting in het ruim vaststellen?",
+    "questionExplanation": "Niveau: Toepassen.\nLeerdoel: In een situatie met deels geregelde maatregelen herkennen dat betreding nog niet is toegestaan.\nDeelnemers wegen meerdere al geregelde maatregelen af tegen de nog ontbrekende vrijgave. De ontbrekende voorwaarde bepaalt de beslissing.\nDit is een formatieve lesvraag met één juist antwoord. Laat deelnemers eerst zelf kiezen en hun redenering geven. Bespreek daarna het juiste antwoord en de afleiders. Licht bij uiteenlopende antwoorden het betreffende principe opnieuw toe.",
+    "distractors": "B: verwart bewaking met toestemming.\nC: beschouwt een vaste ventilatietijd als bewijs van veiligheid.\nD: verwart een korte controle bij het mangat met een volledige beoordeling en vrijgave.",
+    "attention": "Leg vóór de vraag uit dat een bumptest de werking van de meter controleert. De atmosfeermeting beoordeelt het ruim. Het luik blijft tijdens betreding in open stand geborgd.",
+    "captions": []
+  },
+  {
+    "n": 4,
+    "title": "Werking van de noodlijn",
+    "stem": "Welke uitspraak over de noodlijn van een transportband is juist?",
+    "options": [
+      "Na het trekken aan de noodlijn staat de band meteen volledig stil.",
+      "De noodlijn maakt de band ook veilig voor reparatie en schoonmaak.",
+      "De noodlijn geeft een stopcommando, maar de band kan nog uitlopen.",
+      "De noodlijn waarschuwt de meldkamer, die daarna de band moet stoppen."
+    ],
+    "key": "C",
+    "multi": false,
+    "explain": "C is juist. Bij een ongeval activeer je direct een veilig bereikbare noodlijn of noodstop en laat je hulp alarmeren. Blijf zelf uit de gevaarlijke delen. Voor ingrijpen moet de situatie veilig zijn; onderhoud vraagt passende veiligstelling.",
+    "image": "./images/vraag-4-1.webp",
+    "images": [
+      "./images/vraag-4-1.webp"
+    ],
+    "slide": 4,
+    "level": "Begrijpen",
+    "trainer": "Waarom mag je na het trekken aan de noodlijn niet meteen tussen de bewegende delen grijpen?",
+    "questionExplanation": "Niveau: Begrijpen.\nLeerdoel: De noodstopfunctie onderscheiden van volledige stilstand en veiligstelling.\nDeelnemers onderscheiden een stopcommando van de daaropvolgende stilstand en van veiligstelling.\nDit is een formatieve lesvraag met één juist antwoord. Laat deelnemers eerst zelf kiezen en hun redenering geven. Bespreek daarna het juiste antwoord en de afleiders. Licht bij uiteenlopende antwoorden het betreffende principe opnieuw toe.",
+    "distractors": "A: verwart een stopcommando met onmiddellijke stilstand.\nB: verwart noodstop met LOTOTO.\nD: ziet de noodlijn als uitsluitend een meldvoorziening.",
+    "attention": "Bespreek het verschil tussen een stopcommando, volledige stilstand en veiligstelling.",
+    "captions": []
+  },
+  {
+    "n": 5,
+    "title": "Rook uit een kolenhoop",
+    "stem": "Je rijdt op de weg langs de kolenopslag en ziet rook uit een hoop komen. Je gasmeter geeft op jouw plek geen alarm. Je bent niet aangewezen om broei te bestrijden. Wat doe je?",
+    "options": [
+      "Ik rijd met gesloten ramen dichterbij om de rookbron te vinden en meld daarna.",
+      "Ik blijf de hoop volgen en meld het zodra mijn gasmeter alarm geeft.",
+      "Ik verspreid de rokende bovenlaag met de shovel en meld daarna wat ik heb gedaan.",
+      "Ik blijf uit de rook en van de hoop, waarschuw anderen en meld direct volgens de alarmprocedure."
+    ],
+    "key": "D",
+    "multi": false,
+    "explain": "D is juist. Geen alarm op jouw plek bewijst niet dat de hoop veilig is. De training benoemt ook instortingsgevaar door holle ruimten. Onderzoek en bestrijding vragen een afgesproken aanpak door bevoegde mensen.",
+    "image": "./images/vraag-5-1.webp",
+    "images": [
+      "./images/vraag-5-1.webp"
+    ],
+    "slide": 5,
+    "level": "Toepassen",
+    "trainer": "Welke informatie geef je bij deze melding door, zonder dichterbij te gaan?",
+    "questionExplanation": "Niveau: Toepassen.\nLeerdoel: Een rooksignaal juist beoordelen ondanks een gasmeter die op de huidige plek niet alarmeert.\nDeelnemers combineren een zichtbaar waarschuwingssignaal met een gasmeter zonder alarm en hun bevoegdheid om in te grijpen.\nDit is een formatieve lesvraag met één juist antwoord. Laat deelnemers eerst zelf kiezen en hun redenering geven. Bespreek daarna het juiste antwoord en de afleiders. Licht bij uiteenlopende antwoorden het betreffende principe opnieuw toe.",
+    "distractors": "A: beschouwt een gesloten cabine als voldoende bescherming.\nB: negeert een zichtbaar waarschuwingssignaal.\nC: past een mogelijke bestrijdingsmethode toe zonder beoordeling of opdracht.",
+    "attention": "Benadruk dat medewerkers uit de rook en van de hoop blijven. Stem bestrijding en ademhalingsbescherming af op product, risico en bevoegdheid. Een filtermasker biedt geen algemene bescherming tegen zuurstoftekort of CO.",
+    "captions": []
+  },
+  {
+    "n": 6,
+    "title": "De kippenloop",
+    "stem": "Wat moet bij een kippenloop in orde zijn voordat je hem gebruikt?",
+    "options": [
+      "Hij rust op beide uiteinden en een collega houdt hem tijdens het oversteken vast.",
+      "Hij is gecontroleerd op gebreken en volgens de voorschriften goed vastgezet.",
+      "Hij is onbeschadigd en blijft door zijn eigen gewicht op zijn plaats liggen.",
+      "Hij ligt stevig en wordt vastgezet nadat de eerste medewerker is overgestoken."
+    ],
+    "key": "B",
+    "multi": false,
+    "explain": "B is juist. De controle en het vastzetten vinden vóór gebruik plaats. Houd ook rekening met de geldende eisen aan veilige toegang, zoals leuningwerk en de opstelling.",
+    "image": "./images/vraag-6-1.webp",
+    "images": [
+      "./images/vraag-6-1.webp"
+    ],
+    "slide": 6,
+    "level": "Onthouden",
+    "trainer": "Wat doe je wanneer er geen goedgekeurde en veilige toegang beschikbaar is?",
+    "questionExplanation": "Niveau: Onthouden.\nLeerdoel: De basisvoorwaarden voor gebruik van een kippenloop herkennen.\nDeelnemers herkennen de voorwaarden die vóór gebruik van een kippenloop in orde moeten zijn.\nDit is een formatieve lesvraag met één juist antwoord. Laat deelnemers eerst zelf kiezen en hun redenering geven. Bespreek daarna het juiste antwoord en de afleiders. Licht bij uiteenlopende antwoorden het betreffende principe opnieuw toe.",
+    "distractors": "A: vervangt borging door vasthouden.\nC: vertrouwt op gewicht en wrijving.\nD: schuift een noodzakelijke controle door tot na de eerste blootstelling.",
+    "attention": "Bespreek de veilige toegang volgens de terminal- en scheepsafspraken. Een onveilige toegang wordt niet gebruikt. De afbeelding is context bij aan boord gaan en vervangt de controle van het werkelijke toegangsmiddel niet.",
+    "captions": []
+  },
+  {
+    "n": 7,
+    "title": "Valgevaar bij een kokertrap",
+    "stem": "Een kokertrap gaat onderaan over in een onbeschermd recht trapdeel. Welke uitspraak klopt?",
+    "options": [
+      "De koker beschermt het rechte einddeel niet; ook daar moet het valgevaar worden beheerst.",
+      "De koker zorgt ervoor dat extra valbeveiliging op de hele afdaalroute overbodig is.",
+      "Op het rechte einddeel is valbeveiliging alleen nodig wanneer de treden nat zijn.",
+      "Op het rechte einddeel vervangt vasthouden met twee handen de valbeveiliging."
+    ],
+    "key": "A",
+    "multi": false,
+    "explain": "A is juist. Beoordeel de hele route en volg de voorgeschreven valbeveiliging. Persoonlijke valbeveiliging moet op de juiste manier zijn aangesloten. De grens van 2,5 meter betekent niet dat lager werken vanzelf veilig is.",
+    "image": "./images/vraag-7-1.webp",
+    "images": [
+      "./images/vraag-7-1.webp"
+    ],
+    "slide": 7,
+    "level": "Begrijpen",
+    "trainer": "Waar en hoe sluit je de valbeveiliging aan voordat je een onbeschermd deel bereikt?",
+    "questionExplanation": "Niveau: Begrijpen.\nLeerdoel: Uitleggen waarom een koker niet alle delen van de afdaalroute beschermt.\nDeelnemers verklaren waarom bescherming op één deel van de route geen bescherming op het hele traject bewijst.\nDit is een formatieve lesvraag met één juist antwoord. Laat deelnemers eerst zelf kiezen en hun redenering geven. Bespreek daarna het juiste antwoord en de afleiders. Licht bij uiteenlopende antwoorden het betreffende principe opnieuw toe.",
+    "distractors": "B: trekt de bescherming van de koker door naar het open deel.\nC: beperkt valgevaar tot gladheid.\nD: verwart voorzichtig klimmen met een beschermingsmaatregel.",
+    "attention": "Gebruik de procedure en het beveiligingssysteem van de daadwerkelijke trap. Een harnas dragen is pas effectief als het volgens voorschrift wordt gebruikt en aangesloten.",
+    "captions": []
+  },
+  {
+    "n": 8,
+    "title": "Sojameel en zuurstofgehalte",
+    "stem": "In een loods met opgeslagen sojameel wordt een gasmeting uitgevoerd om te controleren op fosfine. De gasmeter toont geen fosfine aan. Welke uitspraak over het zuurstofgehalte in de loods is juist?",
+    "options": [
+      "Het zuurstofgehalte is dan normaal, want fosfine veroorzaakt het zuurstoftekort.",
+      "Het zuurstofgehalte is dan veilig zolang de ventilator draait.",
+      "Het zuurstofgehalte kan te laag zijn doordat processen in het product zuurstof verbruiken.",
+      "Het zuurstofgehalte blijft dan veilig zolang niemand in de loods werkt."
+    ],
+    "key": "C",
+    "multi": false,
+    "explain": "C is juist. De gasmeting in de vraag is uitgevoerd om op fosfine te controleren. De gasmeter toont geen fosfine aan. Deze uitslag over fosfine vertelt niet hoeveel zuurstof aanwezig is. Biologische en chemische processen in het opgeslagen sojameel kunnen zuurstof verbruiken. Daardoor kan er ook zonder aantoonbare fosfine te weinig zuurstof in de loods aanwezig zijn. Laat het zuurstofgehalte afzonderlijk meten en beoordelen volgens de betredingsprocedure.",
+    "image": "./images/vraag-8-1.webp",
+    "images": [
+      "./images/vraag-8-1.webp"
+    ],
+    "slide": 8,
+    "level": "Begrijpen",
+    "trainer": "De gasmeter toont geen fosfine aan. Welke meetwaarde heb je nog nodig om het risico op zuurstoftekort te beoordelen? Waardoor kan het zuurstofgehalte na een eerdere gasmeting veranderen?",
+    "questionExplanation": "Niveau: Begrijpen.\nLeerdoel: Uitleggen waarom een gasmeting die geen fosfine aantoont geen bewijs is voor voldoende zuurstof.\nDe vraag benoemt eerst de controle op fosfine en de uitslag van de gasmeting. Vervolgens beoordelen deelnemers wat die uitslag betekent voor het zuurstofgehalte. Zij onderscheiden de controle op fosfine van het bepalen van het zuurstofgehalte en verklaren waarom zuurstoftekort mogelijk blijft.\nDit is een formatieve lesvraag met één juist antwoord. Laat deelnemers eerst zelf kiezen en hun redenering geven. Bespreek daarna het juiste antwoord en de afleiders. Licht bij uiteenlopende antwoorden het betreffende principe opnieuw toe.",
+    "distractors": "A: koppelt zuurstoftekort uitsluitend aan fosfine en ziet de uitslag voor fosfine als bewijs voor een normaal zuurstofgehalte.\nB: ziet draaiende ventilatie als bewijs voor voldoende zuurstof.\nD: vergeet dat processen in het opgeslagen product ook zonder aanwezige medewerkers zuurstof kunnen verbruiken.",
+    "attention": "Laat deelnemers benoemen dat de gasmeting op fosfine daadwerkelijk is uitgevoerd. 'Geen fosfine aangetoond' beschrijft de uitslag. Dit betekent niet dat de controle op fosfine achterwege is gelaten. Bespreek dat processen in de lading zuurstof kunnen verbruiken. Fosfine en zuurstof worden afzonderlijk beoordeeld. Ventilatie alleen bewijst geen veilige atmosfeer. Volg de geldende betredingsprocedure.",
+    "captions": []
+  },
+  {
+    "n": 9,
+    "title": "Stofexplosie voorkomen",
+    "stem": "Welke aanpak helpt een stofexplosie bij brandbaar bulkstof te voorkomen?",
+    "options": [
+      "Opgehoopt stof met perslucht wegblazen en open vuur verbieden.",
+      "Stofophoping en stofwolken beperken en ontstekingsbronnen beheersen.",
+      "Stof laten liggen en uitsluitend het stalen handgereedschap vervangen.",
+      "Een geschikt stofmasker dragen en korter in de stoffige ruimte werken."
+    ],
+    "key": "B",
+    "multi": false,
+    "explain": "B is juist. Een brandbare stofwolk in lucht kan door een ontstekingsbron ontbranden. Beperk stof met een geschikte werkwijze en gebruik apparatuur en gereedschap die passen bij de beoordeelde explosierisico’s.",
+    "image": "./images/vraag-9-1.webp",
+    "images": [
+      "./images/vraag-9-1.webp"
+    ],
+    "slide": 9,
+    "level": "Begrijpen",
+    "trainer": "Welke ontstekingsbronnen blijven bestaan als je alleen een stalen hamer vervangt?",
+    "questionExplanation": "Niveau: Begrijpen.\nLeerdoel: Uitleggen dat stofbeheersing en het beheersen van ontstekingsbronnen samen nodig zijn.\nDeelnemers verklaren waarom meerdere oorzaken van een stofexplosie tegelijk moeten worden beheerst.\nDit is een formatieve lesvraag met één juist antwoord. Laat deelnemers eerst zelf kiezen en hun redenering geven. Bespreek daarna het juiste antwoord en de afleiders. Licht bij uiteenlopende antwoorden het betreffende principe opnieuw toe.",
+    "distractors": "A: maakt met perslucht juist een stofwolk en richt zich alleen op open vuur.\nC: pakt maar één mogelijke bron aan.\nD: verwart bescherming tegen inademing met het voorkomen van een explosie.",
+    "attention": "Bespreek stofbeheersing, geschikte apparatuur en gereedschap en een veilige schoonmaakmethode volgens de werkprocedure. Het afgebeelde gereedschap is één onderdeel van de beheersmaatregelen.",
+    "captions": []
+  },
+  {
+    "n": 10,
+    "title": "Verhalen van een drijfkraan",
+    "stem": "De meerdraden zijn gecontroleerd en het team heeft afgesproken de drijfkraan te verhalen. Vlak voor de start veroorzaakt een passerend schip flinke golfslag. Het ponton beweegt sterk. Wat doe je?",
+    "options": [
+      "Ik stel het verhalen uit en stem opnieuw af zodra water en werkplek weer veilig zijn.",
+      "Ik begin heel langzaam, omdat de meerdraden vooraf zijn gecontroleerd.",
+      "Ik begin tussen twee golven, zodat de eerste verplaatsing rustig verloopt.",
+      "Ik begin volgens plan, omdat de verantwoordelijke al toestemming heeft gegeven."
+    ],
+    "key": "A",
+    "multi": false,
+    "explain": "A is juist. De situatie is veranderd sinds de voorbereiding. Herbeoordeel de omstandigheden en houd contact met het team. Hervat volgens de geldende procedure; blijf uit de gevarenzone van de draden.",
+    "image": "./images/vraag-10-1.webp",
+    "images": [
+      "./images/vraag-10-1.webp"
+    ],
+    "slide": 10,
+    "level": "Toepassen",
+    "trainer": "Wat moet het team opnieuw controleren voordat het begint?",
+    "questionExplanation": "Niveau: Toepassen.\nLeerdoel: Een eerder startbesluit heroverwegen wanneer de omstandigheden veranderen.\nDeelnemers heroverwegen een eerder startbesluit op basis van veranderde omstandigheden.\nDit is een formatieve lesvraag met één juist antwoord. Laat deelnemers eerst zelf kiezen en hun redenering geven. Bespreek daarna het juiste antwoord en de afleiders. Licht bij uiteenlopende antwoorden het betreffende principe opnieuw toe.",
+    "distractors": "B: verwart een materiaalcontrole met beheersing van golfslag.\nC: gebruikt een kort rustig moment als bewijs.\nD: laat eerdere toestemming zwaarder wegen dan een nieuw risico.",
+    "attention": "Bespreek opnieuw afstemmen, communicatie en veilige posities. De plaatselijke verhaalprocedure bepaalt de technische handelingen.",
+    "captions": []
+  },
+  {
+    "n": 11,
+    "title": "Bresgevaar begrijpen",
+    "stem": "Welke uitspraak over bresgevaar bij een hoop bulkgoederen is juist?",
+    "options": [
+      "Een hoop blijft stabiel zolang de buitenkant droog is.",
+      "Zonder zichtbare scheuren is er geen gevaar voor plotseling instorten.",
+      "De cabine voorkomt dat een machine bij een instorting wordt bedolven.",
+      "Door van onderaf af te graven kan de bovenliggende lading plotseling instorten."
+    ],
+    "key": "D",
+    "multi": false,
+    "explain": "D is juist. Door steun weg te nemen kan bovenliggende lading afschuiven en mensen of machines bedelven. Werk volgens een veilige afgraafmethode en blijf buiten het gebied waar lading terecht kan komen.",
+    "image": "./images/vraag-11-1.webp",
+    "images": [
+      "./images/vraag-11-1.webp"
+    ],
+    "slide": 11,
+    "level": "Begrijpen",
+    "trainer": "Hoe waarschuw je iemand die onder een onstabiele wand werkt, terwijl je zelf buiten de gevarenzone blijft?",
+    "questionExplanation": "Niveau: Begrijpen.\nLeerdoel: Herkennen waardoor lading kan instorten en welke signalen geen veiligheid bewijzen.\nDeelnemers verklaren hoe ondergraven de stabiliteit kan aantasten en beoordelen onjuiste aannames over veiligheid.\nDit is een formatieve lesvraag met één juist antwoord. Laat deelnemers eerst zelf kiezen en hun redenering geven. Bespreek daarna het juiste antwoord en de afleiders. Licht bij uiteenlopende antwoorden het betreffende principe opnieuw toe.",
+    "distractors": "A: verwart een droge buitenkant met stabiliteit.\nB: verwacht altijd zichtbare waarschuwingen.\nC: overschat de bescherming van de cabine tegen bedelving.",
+    "attention": "Benadruk dat ook droge hopen kunnen instorten. Een collega waarschuwen betekent niet dat je de gevarenzone in gaat.",
+    "captions": []
+  },
+  {
+    "n": 12,
+    "title": "Veiligstelling controleren",
+    "stem": "Een collega wil een rol van een transportband vervangen. De band staat stil en bij de hoofdschakelaar hangt een slot met label. Je collega weet niet of de veiligstelling is gecontroleerd. Wat zeg je voordat hij begint?",
+    "options": [
+      "Je kunt beginnen; het slot met label bewijst dat de band veilig is.",
+      "Je kunt beginnen als de meldkamer belooft de band niet te starten.",
+      "Wacht met de reparatie; laat eerst volgens de procedure controleren of de band veiliggesteld is.",
+      "Druk voor de zekerheid de noodstop in; daarna kun je beginnen."
+    ],
+    "key": "C",
+    "multi": false,
+    "explain": "C is juist. Een zichtbaar slot bewijst niet dat alle gevaarlijke energie is beheerst. Laat de volledige veiligstelling en de controle volgens LOTOTO uitvoeren door bevoegde personen. Test niet op eigen initiatief terwijl iemand in de gevarenzone staat.",
+    "image": "./images/vraag-12-1.webp",
+    "images": [
+      "./images/vraag-12-1.webp"
+    ],
+    "slide": 12,
+    "level": "Toepassen",
+    "trainer": "Welke energie of beweging kan bij deze band nog gevaarlijk zijn nadat de stroom is uitgeschakeld?",
+    "questionExplanation": "Niveau: Toepassen.\nLeerdoel: Bij een schijnbaar veiliggestelde installatie herkennen dat de controle nog ontbreekt en de collega laten wachten.\nDeelnemers beoordelen een schijnbaar veilige installatie en kiezen voor controle voordat het werk begint.\nDit is een formatieve lesvraag met één juist antwoord. Laat deelnemers eerst zelf kiezen en hun redenering geven. Bespreek daarna het juiste antwoord en de afleiders. Licht bij uiteenlopende antwoorden het betreffende principe opnieuw toe.",
+    "distractors": "A: vertrouwt op het uiterlijk van de veiligstelling.\nB: vervangt technische maatregelen door een afspraak.\nD: beschouwt de noodstop als vervanging van veiligstelling.",
+    "attention": "Bespreek vóór de vraag de controle van de veilige toestand bij LOTOTO, inclusief opgeslagen energie. Die controle hoort bij de procedure en wordt door bevoegde personen uitgevoerd.",
+    "captions": []
+  }
+]
