@@ -1,6 +1,6 @@
 {
   "name": "svh-sector-bulk",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "private": true,
   "type": "module",
   "description": "VCH Bulk-oefenapp met tijdelijke WebRTC-groepssessies, zonder database of eigen serverfuncties",

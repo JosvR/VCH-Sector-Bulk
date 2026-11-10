@@ -98,7 +98,7 @@ export default function LearningApp() {
   const trainerControls = <div className="review-controls"><button className="btn secondary" disabled={trainerIndex === 0} onClick={() => trainerGo(trainerIndex - 1)}><ChevronLeft size={18} /> Vorige</button><span>{trainerIndex + 1} van {order.length}</span><button className="btn primary" aria-pressed={revealed} onClick={() => { const next = !revealed; setRevealed(next); if (live.snapshot.phase === 'review') live.client.current?.review(trainerQuestion.n, next); }}>{revealed ? <EyeOff size={18} /> : <Eye size={18} />}{revealed ? 'Verberg goede antwoorden' : 'Toon goede antwoorden'}</button><button className="btn secondary" disabled={trainerIndex === order.length - 1} onClick={() => trainerGo(trainerIndex + 1)}>Volgende <ChevronRight size={18} /></button></div>;
 
   return <div className={`app-shell ${projecting ? 'static-projecting' : ''}`}>
-    <small className="app-version" aria-label={`Versie ${version}`}>v{version}</small>
+    <small className="app-version" aria-label={`Versie ${version}`}>V{version.split('.').map(part => part.padStart(2, '0')).join('.')}</small>
     {!projecting && <header className="site-header"><div className="header-inner"><div className="brand"><img src="./images/vch-logo.png" alt="VCH — Stichting Veilige Haven" /><span>VEILIG WERKEN<br /><b>OP DE BULKTERMINAL</b></span></div><div className="header-right"><span className="header-label">SAMEN OEFENEN</span>{mode !== 'home' && <button className="text-btn" disabled={pending} onClick={() => go('home')}>Startpagina</button>}</div></div></header>}
     <main>
       {notice && <div className="message notice" role="status">{notice}<button aria-label="Melding sluiten" onClick={() => setNotice('')}><X size={18} /></button></div>}

@@ -1,5 +1,9 @@
 # VCH Sector Bulk — samen oefenen
 
+## Nieuw in versie 4.0.2
+
+- Nieuwe foto op de startpagina.
+
 ## Nieuw in versie 4.0.1
 
 - Knop **QR-code vergroten** bij de deelnemers-QR op het startscherm en in een actieve trainerssessie. De QR blijft ook aanklikbaar.
@@ -7,7 +11,7 @@
 - Versienummer staat klein rechtsboven op start-, trainer-, projectie- en deelnemersschermen.
 
 
-Versie 4.0.1. Dezelfde statische WebRTC-werking als VCH Container Remote 4.0.0, met de twaalf Bulk-vragen en afbeeldingen uit `Bulk-12-toetsvragen-met-trainernotities aangepast.pptx`. De formulering van vraag 8 en de afbeelding bij vraag 9 zijn overgenomen.
+Versie 4.0.2. Dezelfde statische WebRTC-werking als VCH Container Remote 4.0.0, met de twaalf Bulk-vragen en afbeeldingen uit `Bulk-12-toetsvragen-met-trainernotities aangepast.pptx`. De formulering van vraag 8 en de afbeelding bij vraag 9 zijn overgenomen.
 
 
 12 oefenvragen met afbeeldingen en toelichtingen, zelfstandig oefenen en **live groepssessies zonder database of eigen serverfuncties**. Namen en antwoorden staan tijdens groepssessies alleen in het werkgeheugen van de browsers.
